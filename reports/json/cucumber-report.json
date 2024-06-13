@@ -1,0 +1,296 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api(post,-update)-scenarios;post---create-new-user",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "POST - Create new user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I send a request to create new user",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "verify user is created",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@postapi",
+            "line": 3
+          },
+          {
+            "name": "@apitest",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api(post,-update)-scenarios;update---update-existing-user",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "UPDATE - Update existing user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I send a request to update user \"2\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "verify user is updated",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updateapi",
+            "line": 8
+          },
+          {
+            "name": "@apitest",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api(post,-update)-scenarios",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API(POST, UPDATE) scenarios",
+    "tags": [],
+    "uri": "cypress\\e2e\\bdd\\feature\\Api.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "web-scenario-with-outline;bank-account-validation",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Bank account validation",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "\"Hermoine Granger\" login to the XYZ Bank",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2435000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "account number \"1001\" is displayed",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@outline",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "web-scenario-with-outline;bank-account-validation",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Bank account validation",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "\"Harry Potter\" login to the XYZ Bank",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1638000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Home page is displayed",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "account number \"1004\" is displayed",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@outline",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "web-scenario-with-outline",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Web scenario with outline",
+    "tags": [],
+    "uri": "cypress\\e2e\\bdd\\feature\\Bankoutline.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "web-scenario-with-datatable;successful-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful Login",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "student",
+                      "Password123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user submits login details",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user is able to log in sucessfully",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@datatable",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "web-scenario-with-datatable",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Web scenario with datatable",
+    "tags": [],
+    "uri": "cypress\\e2e\\bdd\\feature\\Logindatatable.feature"
+  }
+]

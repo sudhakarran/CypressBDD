@@ -1,0 +1,10 @@
+{
+	"browserName": "electron",
+	"browserVersion": "118.0.5993.159",
+	"osName": "win32",
+	"osVersion": "10.0.22631",
+	"nodeVersion": "20.14.0",
+	"cypressVersion": "13.6.6",
+	"startedTestsAt": "2024-06-13T10:11:49.315Z",
+	"endedTestsAt": "2024-06-13T10:12:19.145Z"
+}
