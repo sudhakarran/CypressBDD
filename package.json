@@ -9,7 +9,7 @@
     "web",
     "api"
   ],
-  "author": "",
+  "author": "SK",
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^13.6.6",
